@@ -12,7 +12,7 @@ def compile_workbooks(workbooks_path, final_filename):
         raise TypeError("nome do arquivo tem que ser string")
 
     if not os.path.exists(workbooks_path):
-        raise NotADirectoryError("workbook_path indicado n„o existe")
+        raise NotADirectoryError("workbook_path indicado n√£o existe")
 
     if not final_filename.endswith(".xlsx"):
         raise ValueError('nome final do arquivo deve ter extensao ".xlsx"')
